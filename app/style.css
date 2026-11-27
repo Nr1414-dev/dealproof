@@ -96,6 +96,16 @@ a { color: var(--navy-2); }
 .pill .n { opacity: .7; font-weight: 500; }
 .result-count { margin: 10px 0 0; color: var(--muted); font-size: 14px; }
 
+/* Rejected was-prices strip */
+.audit-strip {
+  background: var(--paper-2); border: 1px solid var(--line); border-left: 4px solid var(--red);
+  border-radius: 10px; padding: 10px 16px; margin: 12px 0 0;
+}
+.audit-strip h3 { margin: 0 0 4px; font-size: 14px; }
+.audit-strip ul { margin: 0; padding-left: 0; list-style: none; display: grid; grid-template-columns: 1fr 1fr; gap: 2px 24px; }
+.audit-strip li { font-size: 13px; color: var(--muted); }
+.audit-strip li strong { color: var(--ink); }
+
 /* Deal grid + cards */
 .grid {
   display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));

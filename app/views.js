@@ -1,7 +1,7 @@
 // Views: render every route into #view. Plain DOM building, no
 // framework, no network calls. All data comes from data.js.
 
-import { deals, promos, compare, CHECKED_LABEL } from "./data.js";
+import { deals, promos, compare, rejected, CHECKED_LABEL } from "./data.js";
 import {
   VERDICT_LABELS,
   savings,
@@ -216,6 +216,19 @@ export function viewDeals(f, onChange) {
 
   const shown = sortDeals(filterDeals(deals, f), f.sort);
   frag.append(el("p", "result-count", `Showing ${shown.length} of ${deals.length} deals · checked ${CHECKED_LABEL}`));
+
+  const audit = el("section", "audit-strip");
+  audit.setAttribute("aria-label", "Was-prices we rejected");
+  audit.append(el("h3", null, "Was-prices we rejected"));
+  const aul = el("ul");
+  for (const r of rejected) {
+    const li = el("li");
+    li.append(el("strong", null, r.item + ": "));
+    li.append(document.createTextNode(r.why));
+    aul.append(li);
+  }
+  audit.append(aul);
+  frag.append(audit);
 
   const grid = el("div", "grid");
   if (!shown.length) {
