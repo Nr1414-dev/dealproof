@@ -25,7 +25,7 @@ where we confirmed it — so anyone can check it before buying.
 - **Today-only promos (`#/promos`):** 3 gift-card and giveaway offers that
   run 27 Nov only. These are **not** price cuts, so they are listed
   separately and are not counted in the 60 deals.
-- **How we check (`#/how`):** the method, in full — including the 13
+- **How we check (`#/how`):** the method, in full — including the 14
   products we dropped during checking because their price or was-price
   could not be verified at a named store.
 
