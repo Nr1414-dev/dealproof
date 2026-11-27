@@ -4,8 +4,8 @@
 [![rank](https://make.fun/badge/black-friday-deal-finder-01/Nr1414-dev/dealproof/rank.svg)](https://make.fun/bounty/black-friday-deal-finder-01)
 [![reward](https://make.fun/badge/black-friday-deal-finder-01/Nr1414-dev/dealproof/reward.svg)](https://make.fun/bounty/black-friday-deal-finder-01)
 
-DealProof is a hand-built Black Friday deal finder. **60 deals, 14 all-time
-lows, 7 stores, $11,354 total savings, 40% average discount** — every price
+DealProof is a hand-built Black Friday deal finder. **60 deals, 17 all-time
+lows, 12 stores, $13,244 total savings, 41% average discount** — every price
 re-checked on **27 Nov 2026, 14:40 WIB (07:40 UTC)** against a source that
 names the store and the date. Each card prints the price we saw, the store's
 own list price, the dollar and percent saving, one line of evidence, and
@@ -20,8 +20,8 @@ where we confirmed it — so anyone can check it before buying.
   page** — never a guessed product URL — and shows "Also at …" prices
   where another store is cheaper or tied.
 - **Compare stores (`#/compare`):** the same product at two or more stores
-  for 10 products, plus a strip of the five biggest price gaps today
-  (largest: LG C5 OLED, $299.99 between Best Buy and Amazon).
+  for 14 products, plus a strip of the five biggest price gaps today
+  (largest: Breville Barista Pro, $220 between Amazon and breville.com).
 - **Today-only promos (`#/promos`):** 3 gift-card and giveaway offers that
   run 27 Nov only. These are **not** price cuts, so they are listed
   separately and are not counted in the 60 deals.

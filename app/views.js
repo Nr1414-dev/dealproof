@@ -340,7 +340,7 @@ export function viewCompare() {
   table.append(tbody);
   wrap.append(table);
   frag.append(wrap);
-  const note = el("p", "result-count", `10 products compared · all prices checked ${CHECKED_LABEL}`);
+  const note = el("p", "result-count", `${compare.length} products compared · all prices checked ${CHECKED_LABEL}`);
   frag.append(note);
   return frag;
 }
