@@ -20,6 +20,8 @@ import { cpSync, existsSync, mkdirSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { buildDossier } from './vendor/makefun-frontend.ts';
+import { createHash } from 'node:crypto';
+import { readFileSync } from 'node:fs';
 
 const here = fileURLToPath(new URL('.', import.meta.url));
 const out = process.env.MAKEFUN_OUTPUT_DIR ?? '/output';
@@ -36,3 +38,20 @@ writeFileSync(
   join(out, 'dossier.json'),
   buildDossier(out, { text_max_bytes: 163840, screenshots: { max: 4, max_bytes: 262144 }, app_max_files: 993, app_max_bytes: 16777216 }),
 );
+
+// Self-check the dossier we just wrote: re-hash every screenshot on disk and
+// confirm it matches both the sha256 the dossier records and the base64 copy
+// embedded in it, so a stale or corrupted file can never reach the judge
+// silently. This only reads; it never rewrites dossier.json.
+const dossier = JSON.parse(readFileSync(join(out, 'dossier.json'), 'utf8'));
+let verifiedImages = 0;
+for (const image of dossier.images ?? []) {
+  const onDisk = readFileSync(join(out, 'screenshots', image.name));
+  const diskHash = createHash('sha256').update(onDisk).digest('hex');
+  const embeddedHash = createHash('sha256').update(Buffer.from(image.base64, 'base64')).digest('hex');
+  if (diskHash !== image.sha256 || embeddedHash !== image.sha256) {
+    throw new Error(`dossier hash mismatch for ${image.name}: recorded ${image.sha256}, on disk ${diskHash}, embedded ${embeddedHash}`);
+  }
+  verifiedImages += 1;
+}
+console.log(`dossier verified: ${verifiedImages} screenshots, recorded hashes match files on disk`);
