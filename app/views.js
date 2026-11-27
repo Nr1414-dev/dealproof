@@ -379,7 +379,7 @@ export function viewHow() {
     el(
       "p",
       null,
-      "Dropped during checking, 27 Nov: 13 products whose was-price or price could not be verified at a named store (for example the Vizio Mini LED line, the Costco Hisense QD7 and TCL QM6K, a $649 MacBook Neo with conflicting prices, and Sam's Club listings that only appear behind a membership wall). They are not on this list."
+      "Dropped during checking, 27 Nov: products whose was-price or price could not be verified at a named store — for example the Vizio Mini LED line, the Costco Hisense QD7 and TCL QM6K, a $649 MacBook Neo with conflicting prices, and Sam's Club listings that only appear behind a membership wall — plus older roundup prices we could not confirm on 27 Nov. They are not on this list."
     )
   );
   frag.append(box);
