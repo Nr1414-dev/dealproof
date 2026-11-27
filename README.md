@@ -1,8 +1,8 @@
 # DealProof — 60 verified Black Friday deals, checked 27 Nov 2026
 
 [![make.fun](https://make.fun/badge/black-friday-deal-finder-01.svg)](https://make.fun/bounty/black-friday-deal-finder-01)
-[![rank](https://make.fun/badge/black-friday-deal-finder-01/rank.svg)](https://make.fun/bounty/black-friday-deal-finder-01)
-[![reward](https://make.fun/badge/black-friday-deal-finder-01/reward.svg)](https://make.fun/bounty/black-friday-deal-finder-01)
+[![rank](https://make.fun/badge/black-friday-deal-finder-01/Nr1414-dev/dealproof/rank.svg)](https://make.fun/bounty/black-friday-deal-finder-01)
+[![reward](https://make.fun/badge/black-friday-deal-finder-01/Nr1414-dev/dealproof/reward.svg)](https://make.fun/bounty/black-friday-deal-finder-01)
 
 DealProof is a hand-built Black Friday deal finder. **60 deals, 14 all-time
 lows, 7 stores, $11,354 total savings, 40% average discount** — every price
