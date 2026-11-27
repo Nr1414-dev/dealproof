@@ -368,7 +368,7 @@ export function viewHow() {
     "The was-price is the store's own list price for that exact product. We never invent a was-price, and we never list a product whose was-price we could not verify.",
     "The verdict comes from comparing the sale price with the product's 2026 street price: all-time low means the lowest price we have seen this year; strong means a real cut below the usual street price; routine means an ordinary cut. Inflated was-prices are dropped, not listed.",
     "We check the same product at more than one store where it matters, and print the other stores' prices on the card.",
-    "We link to store search pages, not to product pages we guessed. If a store's search link does not work, we say so rather than inventing a URL.",
+    "We link to store search pages, not to product pages we guessed. If a store has no working search link, we say so on the card rather than inventing a URL — Woot has no site search, so its two cards link to woot.com itself.",
     "No product photos: every thumbnail is a plain colour block with the category initials. No affiliate codes, no sponsored slots, no paid placement.",
     "Prices move during Black Friday. The check time printed on every card is the moment we saw that price; the store page is always the final word.",
   ];
