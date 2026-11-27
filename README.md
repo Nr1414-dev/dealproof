@@ -4,8 +4,8 @@
 [![rank](https://make.fun/badge/black-friday-deal-finder-01/rank.svg)](https://make.fun/bounty/black-friday-deal-finder-01)
 [![reward](https://make.fun/badge/black-friday-deal-finder-01/reward.svg)](https://make.fun/bounty/black-friday-deal-finder-01)
 
-DealProof is a hand-built Black Friday deal finder. **60 deals, 15 all-time
-lows, 7 stores, $11,384 total savings, 40% average discount** — every price
+DealProof is a hand-built Black Friday deal finder. **60 deals, 14 all-time
+lows, 7 stores, $11,354 total savings, 40% average discount** — every price
 re-checked on **27 Nov 2026, 14:40 WIB (07:40 UTC)** against a source that
 names the store and the date. Each card prints the price we saw, the store's
 own list price, the dollar and percent saving, one line of evidence, and
